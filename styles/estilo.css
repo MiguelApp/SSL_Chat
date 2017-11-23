@@ -1,0 +1,133 @@
+body{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #e5e5e5;
+	
+}
+.pagina{
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+.div_topo{
+	background: rgb(0, 109, 240);
+	color: white;
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+	height: 80px;
+	cursor: default;
+}
+.div_topo_titulo{
+	float: left;
+	height: 100%;
+	text-align:center; 
+    display:table;
+}
+.div_topo_utilizador{
+	float: right;
+	height: 100%;
+	text-align:center; 
+	display:table;
+	font-size: 20px;
+	font-weight: bold;
+}
+.div_topo_utilizador input{
+	color: #FFFFFF;
+	display:table-cell;
+	height: 100%;
+	background: transparent;
+	font-size: 20px;
+	border: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 150px;
+}
+.div_topo_titulo h2{
+	display:table-cell;
+	vertical-align:middle;
+	padding-left: 30px;
+}
+.div_conteudo{
+	margin: 0;
+	padding: 0 10px 10px;
+	overflow-x:hidden;
+	margin-bottom: 60px;
+}
+.div_mensagem {
+	padding: 10px;
+	overflow: hidden;
+	display: flex;
+}
+.caixa_mensagem_enviada{
+	margin-left:auto; 
+	margin-right:0;
+}
+.caixa_mensagem_enviada span{
+	float: right;
+}
+.caixa_mensagem_recebida span{
+	float: left;
+}
+.caixa_mensagem_recebida{
+	margin-left:0; 
+	margin-right:auto;
+}
+.caixa_mensagem {
+	background: white;
+	padding: 10px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	max-width:100%;
+}
+.caixa_mensagem p {
+    font-size: 15px;
+    margin: 0 0 0.2rem 0;
+ }
+ .caixa_mensagem span {
+    font-size: 15px;
+    color: rgb(0, 109, 240);
+ }
+ .div_enviar_mensagem {
+	width:100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.div_enviar_mensagem_interior {
+	background: white;
+	border-radius: 10px;
+	margin: 20px;
+	height: 45px;
+}
+ .div_enviar_mensagem input {
+    float:left;
+    width:95%;
+	height:100%;
+	padding-left: 20px;
+	font-size: 15px;
+	color: rgb(48, 48, 48);
+	border: 0;
+	background: initial;
+}
+.div_enviar_mensagem button {
+	float:right;
+    width: 5%;
+	height: 100%;
+	border: 0;
+	background: url('../images/send.png') no-repeat;
+	background-position: center;
+	cursor: hand;
+}
+input:focus, button:focus {
+	outline: none;
+}
+.sombra {
+	-moz-box-shadow: 0 0 15px 2px #999;
+	-webkit-box-shadow:0 0 15px 2px #999;
+}
