@@ -74,6 +74,7 @@ window.addEventListener("load", function () {
         var json = '{"utilizador" : "' + utilizador_texto + '", "mensagem" : "' + mensagem_texto + '"}';
         websocket.send(json);
         novaMensagem(JSON.parse(json), false, false);
+        mensagem.value = '';
         e.preventDefault();
     })
 
