@@ -6,7 +6,7 @@ class SimpleChat(WebSocket):
     def handleMessage(self):
        for client in clients:
           if client != self:
-             client.sendMessage(self.address[0] + u' - ' + self.data)
+             client.sendMessage(self.data)
 
     def handleConnected(self):
        print(self.address, 'connected')
