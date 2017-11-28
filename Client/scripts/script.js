@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
     var mensagem = document.getElementById("tb_enviar");
     var utilizador = document.getElementById("tb_utilizador");
 
-    var websocket = new WebSocket("ws://localhost:8000/");
+    var websocket = new WebSocket("wss://localhost:8000/");
     websocket.onopen = function (evt) { aoAbrir(evt) };
     websocket.onclose = function (evt) { aoFechar(evt) };
     websocket.onmessage = function (evt) { aoReceber(evt) };
